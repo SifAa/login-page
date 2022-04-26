@@ -1,16 +1,28 @@
-import React from 'react';
+import React from "react";
+import "./styles.css";
+import Signup from "./components/Signup";
+import Login from "./components/Login";
+import Signout from "./components/Signout";
+import { Route, Routes } from "react-router-dom";
+
+/*
+Missing:
+Connect to firestore
+create user in firestore
+check if user exist and sign in using firestore
+sign out using firestore
+React Route
+*/
 
 function App() {
   return (
-    <div style={{ textAlign: 'center' }}>
-      <header>
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Routes>
+        <Route path="/" element={<Login title="Login" />} exact />
+        <Route path="/Signup" element={<Signup title="Signup" />} />
+        <Route path="/Signout" element={<Signout title="Signout" />} />
+      </Routes>
+      {/* <Signup /> */}
     </div>
   );
 }

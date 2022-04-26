@@ -1,0 +1,26 @@
+.card.centered {
+  max-width: 400px;
+  margin: 20vh auto 0 auto;
+  padding: 5% 3% 3%;
+}
+.card h1,
+.card p {
+  text-align: center;
+}
+.card input {
+  margin: 5px 0 10px;
+}
+.card button {
+  width: 100%;
+  margin-bottom: 25px;
+  display: block;
+}
+
+.signout button {
+  margin: 15px auto;
+}
+
+.error {
+  outline: none;
+  border: 1px solid red;
+}
