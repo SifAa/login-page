@@ -5,15 +5,6 @@ import Login from "./components/Login";
 import Signout from "./components/Signout";
 import { Route, Routes } from "react-router-dom";
 
-/*
-Missing:
-Connect to firestore
-create user in firestore
-check if user exist and sign in using firestore
-sign out using firestore
-React Route
-*/
-
 function App() {
   return (
     <div className="container">
