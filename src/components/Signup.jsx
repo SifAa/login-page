@@ -31,6 +31,7 @@ export default function Signup() {
         at least one number
         at least 8 characters
         a symbol 
+      test password D1ff7d8l%
   */
 
   function handleChange(event) {
@@ -42,7 +43,8 @@ export default function Signup() {
     });
   }
 
-  function submitForm() {
+  function submitForm(event) {
+    event.preventDefault();
     if (
       regexName.test(form.username.value) &&
       regexMail.test(form.mail.value) &&
@@ -138,7 +140,6 @@ export default function Signup() {
             type="password"
             id="repeatPassword"
             placeholder="repeat password"
-            //value="D1ff7d8l%"
             autoComplete="new-password"
             className="form-control"
             required
